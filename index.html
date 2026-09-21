@@ -1,0 +1,520 @@
+<!doctype html>
+<!-- site-pronto | modelo: vitrine-dividida | paleta: pastel-atelie | tipos: outfit-karla | ramo: papelaria-personalizada -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arte Única Ateliê Gráfico — Papelaria Personalizada Feita à Mão</title>
+<meta name="description" content="Cadernos argolados, planners, agendas, diários e lembranças personalizadas, feitos à mão um a um desde 2020. Você escolhe o tema, as cores e o nome, aprova a arte e recebe em casa. Enviamos para todo o Brasil.">
+<link rel="canonical" href="https://sussamgtads.github.io/arte-unica-personalizados/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Arte Única Ateliê Gráfico">
+<meta property="og:title" content="Arte Única Ateliê Gráfico — Papelaria Personalizada Feita à Mão">
+<meta property="og:description" content="Cadernos argolados, planners, agendas e lembranças personalizadas, feitos à mão um a um desde 2020. Você aprova a arte antes da produção. Enviamos para todo o Brasil.">
+<meta property="og:url" content="https://sussamgtads.github.io/arte-unica-personalizados/">
+<meta property="og:image" content="https://sussamgtads.github.io/arte-unica-personalizados/assets/img/hero-caderno.jpg">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="1200">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fdfaf5">
+
+<link rel="icon" href="assets/img/logo-arte-unica.jpg">
+<link rel="apple-touch-icon" href="assets/img/logo-arte-unica.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Karla:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --fundo:#fdfaf6;
+  --fundo-alt:#f7efe7;
+  --branco:#fffdfb;
+  --tinta:#3a3240;
+  --tinta-suave:#6c6275;
+  --marca:#c04a68;
+  --marca-escura:#a33c56;
+  --menta:#a8d5c5;
+  --amarelo:#f2d68a;
+  --azul:#b6cde6;
+  --rosa:#f5d2da;
+  --borda:#ece0d6;
+
+  --e1:.5rem; --e2:1rem; --e3:1.5rem; --e4:2.5rem; --e5:4rem; --e6:6rem;
+  --largura:1180px;
+  --raio:18px;
+  --sombra:0 1px 2px rgba(58,50,64,.04), 0 14px 34px -14px rgba(58,50,64,.18);
+  --sombra-alta:0 2px 4px rgba(58,50,64,.05), 0 22px 44px -16px rgba(58,50,64,.24);
+  --transicao:.35s cubic-bezier(.2,.7,.3,1);
+  --barra:72px;
+}
+@media (max-width:760px){:root{--barra:62px}}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden;scroll-padding-top:calc(var(--barra) + 12px)}
+body{margin:0;background:var(--fundo);color:var(--tinta);
+  font-family:'Karla',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-size:1.0625rem;line-height:1.68;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Outfit',ui-sans-serif,system-ui,-apple-system,sans-serif;margin:0;font-weight:600}
+h1{font-size:clamp(2.5rem,1.5rem + 4vw,4.15rem);line-height:1.02;letter-spacing:-.03em;font-weight:700}
+h2{font-size:clamp(1.75rem,1.25rem + 2.1vw,2.75rem);line-height:1.12;letter-spacing:-.022em}
+h3{font-size:1.2rem;line-height:1.3;letter-spacing:-.012em}
+p{margin:0 0 var(--e2);max-width:62ch}
+ul,ol{margin:0;padding:0;list-style:none}
+
+.container{width:min(100% - 2.5rem, var(--largura));margin-inline:auto}
+.lead{font-size:clamp(1.08rem,1rem + .4vw,1.3rem);line-height:1.6;color:var(--tinta-suave)}
+.olho{font-family:'Outfit',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--marca);margin:0 0 var(--e2)}
+
+.pula{position:absolute;left:-9999px;top:0;background:var(--marca);color:#fff;padding:.75rem 1.25rem;z-index:200;border-radius:0 0 12px 0}
+.pula:focus{left:0}
+:focus-visible{outline:3px solid var(--marca);outline-offset:3px;border-radius:6px}
+
+/* ---------- botões ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  min-height:50px;padding:.8rem 1.4rem;border-radius:999px;
+  font-family:'Outfit',sans-serif;font-weight:600;font-size:1rem;letter-spacing:-.01em;
+  text-decoration:none;white-space:nowrap;transition:transform var(--transicao),box-shadow var(--transicao),background var(--transicao)}
+.btn-g{min-height:56px;padding:.95rem 1.8rem;font-size:1.06rem}
+.btn-zap{background:var(--marca);color:#fff;box-shadow:0 10px 22px -12px rgba(192,74,104,.85)}
+.btn-zap:hover{background:var(--marca-escura);transform:translateY(-1px);box-shadow:0 16px 30px -14px rgba(192,74,104,.9)}
+.btn-vazio{background:transparent;color:var(--tinta);border:1.5px solid var(--borda)}
+.btn-vazio:hover{border-color:var(--marca);color:var(--marca);transform:translateY(-1px)}
+
+/* ---------- barra ---------- */
+.barra{position:fixed;inset:0 0 auto 0;z-index:100;height:var(--barra);
+  background:rgba(253,250,246,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  transition:box-shadow var(--transicao),background var(--transicao)}
+.barra.rolou{box-shadow:0 1px 0 var(--borda),0 10px 26px -20px rgba(58,50,64,.5);background:rgba(253,250,246,.94)}
+.barra-in{width:min(100% - 2.5rem, var(--largura));margin-inline:auto;height:100%;
+  display:flex;align-items:center;gap:var(--e3)}
+.marca{display:flex;align-items:center;gap:.65rem;text-decoration:none;flex:0 0 auto}
+.marca img{width:44px;height:44px;border-radius:50%;border:1px solid var(--borda)}
+.marca-txt{display:flex;flex-direction:column;line-height:1.05}
+.marca-txt strong{font-family:'Outfit',sans-serif;font-size:1.08rem;font-weight:700;letter-spacing:-.02em}
+.marca-txt em{font-style:normal;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-suave)}
+.nav{display:flex;gap:var(--e3);margin-left:auto}
+.nav a{text-decoration:none;font-size:.97rem;color:var(--tinta-suave);position:relative;padding:.2rem 0;transition:color var(--transicao)}
+.nav a::after{content:'';position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--marca);transition:right var(--transicao)}
+.nav a:hover{color:var(--tinta)}
+.nav a:hover::after{right:0}
+.barra-zap{margin-left:var(--e3);min-height:44px;padding:.6rem 1.15rem;font-size:.95rem}
+@media (max-width:1000px){.nav{display:none}.barra-zap{margin-left:auto}}
+@media (max-width:420px){.marca-txt em{display:none}.barra-zap span{display:none}}
+
+/* ---------- hero: tela dividida ---------- */
+.hero{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:clamp(2rem,4vw,4.5rem);
+  width:min(100% - 2.5rem, var(--largura));margin-inline:auto;
+  padding-top:calc(var(--barra) + var(--e5));padding-bottom:var(--e5)}
+.hero-txt{max-width:36rem}
+.hero h1{margin-bottom:var(--e3)}
+.grifo{color:var(--marca);position:relative;white-space:nowrap}
+.grifo::after{content:'';position:absolute;left:-.04em;right:-.04em;bottom:.06em;height:.26em;
+  background:var(--amarelo);opacity:.55;border-radius:999px;z-index:-1}
+.hero h1{position:relative;z-index:1}
+.hero .lead{margin-bottom:var(--e4)}
+.hero-btns{display:flex;flex-wrap:wrap;gap:var(--e2)}
+.hero-nota{display:flex;align-items:center;gap:.45rem;margin:var(--e3) 0 0;font-size:.95rem;color:var(--tinta-suave)}
+.hero-nota svg{flex:0 0 auto;color:var(--marca)}
+.hero-foto{position:relative}
+.hero-foto::before{content:'';position:absolute;inset:-1.25rem auto auto -1.25rem;width:58%;height:70%;
+  background:var(--menta);opacity:.32;border-radius:var(--raio);z-index:0}
+.hero-foto img{position:relative;z-index:1;border-radius:var(--raio);box-shadow:var(--sombra-alta);
+  aspect-ratio:3/2;object-fit:cover;width:100%}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;padding-top:calc(var(--barra) + var(--e4));gap:var(--e4)}
+  .hero-txt{max-width:none}
+  .hero-foto::before{display:none}
+}
+@media (max-width:520px){
+  .hero-btns{flex-direction:column;align-items:stretch}
+  .hero-btns .btn{width:100%}
+  .contato-btns{flex-direction:column;align-items:stretch;width:100%}
+  .contato-btns .btn{width:100%}
+}
+
+/* ---------- faixa ---------- */
+.faixa{background:var(--fundo-alt);padding:var(--e4) 0}
+.faixa-g{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--e3)}
+.faixa-i{display:flex;flex-direction:column;gap:.2rem;padding-left:var(--e2);border-left:3px solid var(--rosa)}
+.faixa-i strong{font-family:'Outfit',sans-serif;font-size:1.02rem;font-weight:600}
+.faixa-i span{font-size:.92rem;color:var(--tinta-suave);line-height:1.45}
+@media (max-width:860px){.faixa-g{grid-template-columns:repeat(2,1fr);gap:var(--e3) var(--e2)}}
+@media (max-width:460px){.faixa-g{grid-template-columns:1fr}}
+
+/* ---------- seções ---------- */
+.secao{padding:var(--e6) 0}
+.secao-alt{background:var(--fundo-alt)}
+@media (max-width:760px){.secao{padding:var(--e5) 0}}
+.cab{margin-bottom:var(--e5)}
+.cab h2{margin-bottom:var(--e2);max-width:20ch}
+.cab .lead{max-width:56ch}
+
+/* ---------- grade de produtos ---------- */
+.grade{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--e3)}
+@media (max-width:1000px){.grade{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:540px){.grade{grid-template-columns:1fr}}
+.card{background:var(--branco);border:1px solid var(--borda);border-radius:var(--raio);overflow:hidden;
+  display:flex;flex-direction:column;box-shadow:var(--sombra);
+  transition:transform var(--transicao),box-shadow var(--transicao)}
+.card:hover{transform:translateY(-2px);box-shadow:var(--sombra-alta)}
+.card-foto{background:var(--fundo-alt)}
+.card-foto img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card-txt{padding:var(--e3);display:flex;flex-direction:column;gap:.45rem;flex:1}
+.card-txt h3{margin:0}
+.card-txt p{margin:0;font-size:.95rem;line-height:1.55;color:var(--tinta-suave)}
+.selo{margin:0;display:inline-block;align-self:flex-start;font-family:'Outfit',sans-serif;
+  font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--marca-escura);background:var(--rosa);padding:.3rem .65rem;border-radius:999px}
+
+.sob-encomenda{margin-top:var(--e4);background:var(--fundo-alt);border-radius:var(--raio);
+  padding:clamp(1.75rem,3vw,2.75rem);border:1px solid var(--borda)}
+.secao-alt .sob-encomenda{background:var(--branco)}
+.sob-encomenda h3{margin-bottom:.6rem;font-size:1.35rem}
+.sob-encomenda p{margin-bottom:var(--e3);max-width:70ch}
+
+/* ---------- passos ---------- */
+.passos{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--e3)}
+@media (max-width:1000px){.passos{grid-template-columns:repeat(2,1fr);gap:var(--e4) var(--e3)}}
+@media (max-width:540px){.passos{grid-template-columns:1fr}}
+.passos li{display:flex;flex-direction:column;gap:.5rem}
+.num{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;
+  background:var(--branco);border:1.5px solid var(--marca);color:var(--marca);
+  font-family:'Outfit',sans-serif;font-weight:700;font-size:1.15rem;margin-bottom:.35rem}
+.passos p{margin:0;font-size:.97rem;color:var(--tinta-suave)}
+
+/* ---------- para quem ---------- */
+.pub{display:grid;grid-template-columns:.95fr 1.05fr;align-items:center;gap:clamp(1.5rem,3.5vw,3.5rem);
+  padding:var(--e4) 0;border-top:1px solid var(--borda)}
+.pub:first-of-type{border-top:0;padding-top:0}
+.pub-foto img{border-radius:var(--raio);aspect-ratio:4/3;object-fit:cover;width:100%;box-shadow:var(--sombra)}
+.pub-txt h3{font-size:clamp(1.35rem,1.1rem + .8vw,1.8rem);margin:.7rem 0 .6rem}
+.pub-txt p{color:var(--tinta-suave);margin-bottom:var(--e3)}
+@media (max-width:820px){.pub{grid-template-columns:1fr;gap:var(--e3)}}
+
+/* ---------- ateliê ---------- */
+.atelie{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;background:var(--fundo-alt)}
+.atelie-foto{display:flex}
+.atelie-foto img{width:100%;height:100%;min-height:440px;object-fit:cover}
+.atelie-txt{padding:clamp(2.5rem,5vw,var(--e6)) clamp(1.25rem,4vw,4rem)}
+.atelie-txt h2{margin-bottom:var(--e3);max-width:16ch}
+.atelie-txt p{color:var(--tinta-suave)}
+.assin{font-family:'Outfit',sans-serif;font-weight:600;color:var(--tinta);margin-top:var(--e3)}
+@media (max-width:860px){.atelie{grid-template-columns:1fr}.atelie-foto img{min-height:0;aspect-ratio:16/10}}
+
+/* ---------- contato ---------- */
+.contato{padding:var(--e6) 0;background:var(--fundo);text-align:center}
+.contato-in{display:flex;flex-direction:column;align-items:center}
+.contato h2{margin-bottom:var(--e2);max-width:18ch}
+.contato p{max-width:52ch}
+.contato .lead{margin-bottom:var(--e4)}
+.contato-btns{display:flex;flex-wrap:wrap;gap:var(--e2);justify-content:center}
+.contato-nota{margin:var(--e3) 0 0;font-size:.92rem;color:var(--tinta-suave)}
+
+/* ---------- rodapé ---------- */
+.rodape{background:var(--tinta);color:#efe8f0;padding:var(--e5) 0 var(--e3)}
+.rodape-in{display:flex;flex-wrap:wrap;gap:var(--e4);justify-content:space-between;align-items:flex-start}
+.rodape p{margin:0;font-size:.95rem;color:#c3b8c8;max-width:38ch}
+.rodape-marca{font-family:'Outfit',sans-serif;font-weight:600;font-size:1.15rem;color:#fff !important;margin-bottom:.35rem !important}
+.rodape-nav{display:flex;flex-wrap:wrap;gap:.6rem var(--e3)}
+.rodape-nav a{color:#c3b8c8;text-decoration:none;font-size:.95rem;transition:color var(--transicao)}
+.rodape-nav a:hover{color:#fff}
+.credito{text-align:center;margin:var(--e4) 0 0;font-size:.85rem;color:#8d8194}
+.credito a{color:#c3b8c8}
+
+/* ---------- botão flutuante ---------- */
+.zap-flutua{position:fixed;right:18px;bottom:18px;z-index:120;
+  width:58px;height:58px;border-radius:50%;background:var(--marca);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 12px 28px -8px rgba(192,74,104,.75);transition:transform var(--transicao),background var(--transicao)}
+.zap-flutua:hover{background:var(--marca-escura);transform:translateY(-2px)}
+
+/* ---------- revelação ---------- */
+.revela{opacity:0;transform:translateY(12px);transition:opacity .6s var(--transicao),transform .6s var(--transicao)}
+.revela.vis{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .revela{opacity:1;transform:none;transition:none}
+  *{transition-duration:.01ms !important;animation-duration:.01ms !important}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Arte Única Ateliê Gráfico",
+  "alternateName": "Arte Única Personalizados",
+  "description": "Papelaria criativa e produtos personalizados feitos à mão: cadernos argolados, planners, agendas, diários, cadernetas, capas para caderneta de vacinação, kits de colorir, chaveiros com post-it, lembrancinhas e brindes corporativos.",
+  "url": "https://sussamgtads.github.io/arte-unica-personalizados/",
+  "image": "https://sussamgtads.github.io/arte-unica-personalizados/assets/img/hero-caderno.jpg",
+  "telephone": "+5511947209803",
+  "foundingDate": "2020",
+  "priceRange": "$$",
+  "areaServed": { "@type": "Country", "name": "Brasil" },
+  "sameAs": ["https://www.instagram.com/arte_unica_personalizados"],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Caderno argolado personalizado" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Planner personalizado" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Agenda e diário personalizados" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Caderneta personalizada" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Capa para caderneta de vacinação" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Kit de colorir" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Chaveiro com post-it" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Brindes corporativos personalizados" } }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="pula" href="#conteudo">Pular para o conteúdo</a>
+<div id="topo"></div>
+
+<header class="barra" id="barra">
+  <div class="barra-in">
+    <a class="marca" href="#topo">
+      <img src="assets/img/logo-arte-unica.jpg" alt="Logotipo da Arte Única Ateliê Gráfico" width="44" height="44">
+      <span class="marca-txt"><strong>Arte Única</strong><em>ateliê gráfico</em></span>
+    </a>
+    <nav class="nav" aria-label="Seções do site">
+      <a href="#produtos">Produtos</a>
+      <a href="#como">Como funciona</a>
+      <a href="#publicos">Para quem</a>
+      <a href="#atelie">O ateliê</a>
+    </nav>
+    <a class="btn btn-zap barra-zap" href="https://wa.me/5511947209803?text=Oi!%20Vim%20pelo%20site%20e%20quero%20encomendar%20um%20personalizado." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.45 1.32-2 1.36-.51.04-1.16.06-1.87-.12-.43-.11-.99-.33-1.7-.64-3-1.29-4.95-4.3-5.1-4.5-.15-.2-1.22-1.62-1.22-3.09 0-1.47.77-2.19 1.04-2.49.27-.3.59-.37.79-.37h.57c.18 0 .43-.7.67.51.25.58.85 2.05.92 2.2.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.3 2.36 1.45.3.15.47.12.65-.7.17-.2.74-.87.94-1.17.2-.3.4-.25.67-.15.27.1 1.72.81 2.02.96.3.15.5.22.57.35.07.12.07.72-.18 1.41Z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ================= HERO: tela dividida ================= -->
+<section class="hero">
+  <div class="hero-txt">
+    <p class="olho">Papelaria criativa · desde 2020</p>
+    <h1>Personalizados<br>para contar<br><span class="grifo">histórias</span></h1>
+    <p class="lead">Cadernos argolados, planners, agendas e lembranças feitos à mão, um a um — com o tema, as cores e o nome que você escolher.</p>
+    <div class="hero-btns">
+      <a class="btn btn-zap btn-g" href="https://wa.me/5511947209803?text=Oi!%20Vim%20pelo%20site%20e%20quero%20encomendar%20um%20personalizado." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.45 1.32-2 1.36-.51.04-1.16.06-1.87-.12-.43-.11-.99-.33-1.7-.64-3-1.29-4.95-4.3-5.1-4.5-.15-.2-1.22-1.62-1.22-3.09 0-1.47.77-2.19 1.04-2.49.27-.3.59-.37.79-.37h.57c.18 0 .43-.7.67.51.25.58.85 2.05.92 2.2.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.3 2.36 1.45.3.15.47.12.65-.7.17-.2.74-.87.94-1.17.2-.3.4-.25.67-.15.27.1 1.72.81 2.02.96.3.15.5.22.57.35.07.12.07.72-.18 1.41Z"/></svg>
+        Fazer meu pedido
+      </a>
+      <a class="btn btn-vazio btn-g" href="#produtos">Ver os produtos</a>
+    </div>
+    <p class="hero-nota"><svg viewBox="0 0 24 24" aria-hidden="true" width="17" height="17"><path fill="currentColor" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5L21 16Z"/></svg> Enviamos para todo o Brasil</p>
+  </div>
+  <div class="hero-foto">
+    <img src="assets/img/hero-caderno.jpg" alt="Caderno argolado artesanal com capa floral em tons pastel e o nome Helena escrito em letra cursiva" width="1800" height="1200" fetchpriority="high" decoding="async">
+  </div>
+</section>
+
+<!-- ================= FAIXA DE CONFIANÇA ================= -->
+<section class="faixa" aria-label="O que você pode esperar">
+  <div class="container faixa-g">
+    <div class="faixa-i"><strong>Desde 2020</strong><span>Nasceu na pandemia, do amor por trabalho manual</span></div>
+    <div class="faixa-i"><strong>Feito à mão</strong><span>Cada peça montada e acabada uma a uma</span></div>
+    <div class="faixa-i"><strong>Você aprova a arte</strong><span>Nada vai pra produção antes do seu sim</span></div>
+    <div class="faixa-i"><strong>Todo o Brasil</strong><span>Enviamos para qualquer cidade do país</span></div>
+  </div>
+</section>
+
+<!-- ================= PRODUTOS: a vitrine ================= -->
+<section class="secao" id="produtos">
+  <div class="container">
+    <header class="cab">
+      <p class="olho">A vitrine</p>
+      <h2>Escolha a peça. O resto é do seu jeito.</h2>
+      <p class="lead">Tema, cores, nome, frase, foto ou logomarca — você decide. Se precisar, eu crio ou adapto a arte para você.</p>
+    </header>
+
+    <ul class="grade" role="list">
+      <li class="card destaque">
+        <div class="card-foto"><img src="assets/img/caderno-argolado.jpg" alt="Três cadernos argolados personalizados em rosa, amarelo e verde menta, com os nomes Ana, Beatriz e Lívia nas capas" width="1600" height="1200" loading="lazy" decoding="async"></div>
+        <div class="card-txt">
+          <p class="selo">Carro-chefe</p>
+          <h3>Caderno argolado</h3>
+          <p>O produto principal do ateliê. Capa personalizada com o tema que você quiser, wire-o e miolo de qualidade.</p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card-foto"><img src="assets/img/planner.jpg" alt="Planner personalizado aberto mostrando a grade semanal, com divisórias pastel e caneta dourada ao lado" width="1600" height="1200" loading="lazy" decoding="async"></div>
+        <div class="card-txt"><h3>Planner</h3><p>Para quem organiza a semana no papel. Divisórias, capa e miolo do seu jeito.</p></div>
+      </li>
+      <li class="card">
+        <div class="card-foto"><img src="assets/img/agenda-diario.jpg" alt="Agenda azul com detalhes dourados ao lado de um diário rosa com a frase Meu Diário na capa" width="1600" height="1200" loading="lazy" decoding="async"></div>
+        <div class="card-txt"><h3>Agenda &amp; diário</h3><p>Do compromisso do dia ao registro particular — dois formatos, o mesmo acabamento.</p></div>
+      </li>
+      <li class="card">
+        <div class="card-foto"><img src="assets/img/caderneta.jpg" alt="Quatro cadernetas de bolso personalizadas em verde, rosa, amarelo e azul, cada uma com um nome na capa" width="1600" height="1200" loading="lazy" decoding="async"></div>
+        <div class="card-txt"><h3>Caderneta</h3><p>Pequena, leva na bolsa. Ótima para lembrancinha em quantidade.</p></div>
+      </li>
+      <li class="card">
+        <div class="card-foto"><img src="assets/img/capa-vacinacao.jpg" alt="Capa personalizada para caderneta de vacinação em verde menta com nuvens e o nome Laura" width="1600" height="1200" loading="lazy" decoding="async"></div>
+        <div class="card-txt"><h3>Capa de caderneta de vacinação</h3><p>Protege o documento que mais viaja na bolsa da mãe — e ainda é um presente de chá de bebê.</p></div>
+      </li>
+      <li class="card">
+        <div class="card-foto"><img src="assets/img/kit-colorir.jpg" alt="Kit de colorir com livrinho de desenhos, lápis de cor em tons pastel e cinta de papel kraft" width="1600" height="1200" loading="lazy" decoding="async"></div>
+        <div class="card-txt"><h3>Kit de colorir</h3><p>Livrinho, lápis e estojo. O que segura a criançada na mesa da festa.</p></div>
+      </li>
+      <li class="card">
+        <div class="card-foto"><img src="assets/img/chaveiro-postit.jpg" alt="Dois chaveiros personalizados com bloquinhos de post-it rosa e amarelo, com os nomes Mariana e Juliana" width="1600" height="1200" loading="lazy" decoding="async"></div>
+        <div class="card-txt"><h3>Chaveiro com post-it</h3><p>Miúdo, útil e barato por unidade. Campeão de lembrancinha corporativa e de sala de aula.</p></div>
+      </li>
+      <li class="card">
+        <div class="card-foto"><img src="assets/img/brindes-corporativos.jpg" alt="Kit de brinde corporativo em caixa kraft com caderno verde-sálvia, caneta e cartão, amarrado com fita" width="1600" height="1200" loading="lazy" decoding="async"></div>
+        <div class="card-txt"><h3>Brindes corporativos</h3><p>Kits com a identidade da sua empresa, embalados prontos para entregar.</p></div>
+      </li>
+    </ul>
+
+    <div class="sob-encomenda">
+      <h3>E o que não está aqui</h3>
+      <p>O catálogo cresce conforme o pedido. Também faço <strong>caderno de mensagens e assinaturas para festas</strong>, <strong>livro de fotos para recordações</strong>, <strong>itens para escolas e professores</strong> e lembrancinhas para aniversário, casamento e batizado. Se você tem uma ideia, me conta que a gente desenvolve.</p>
+      <a class="btn btn-zap" href="https://wa.me/5511947209803?text=Oi!%20Tenho%20uma%20ideia%20de%20personalizado%20e%20queria%20saber%20se%20voc%C3%AA%20faz." target="_blank" rel="noopener">Contar minha ideia</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="secao secao-alt" id="como">
+  <div class="container">
+    <header class="cab">
+      <p class="olho">Sem susto</p>
+      <h2>Como funciona o pedido</h2>
+      <p class="lead">Você só recebe o que aprovou. Simples assim.</p>
+    </header>
+    <ol class="passos" role="list">
+      <li><span class="num">1</span><h3>Você escolhe</h3><p>Diz qual produto, o tema, as cores e a quantidade. Se não souber, eu ajudo a decidir.</p></li>
+      <li><span class="num">2</span><h3>Você envia</h3><p>Manda o nome, a frase, a foto ou a logomarca que vai na peça.</p></li>
+      <li><span class="num">3</span><h3>Você aprova</h3><p>Eu crio ou adapto a arte e te mostro antes. Só produzo depois do seu sim.</p></li>
+      <li><span class="num">4</span><h3>Eu faço à mão</h3><p>Impressão de qualidade, acabamento especial e montagem peça por peça. Depois é só esperar chegar.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= PARA QUEM ================= -->
+<section class="secao" id="publicos">
+  <div class="container">
+    <header class="cab">
+      <p class="olho">Para quem</p>
+      <h2>Quem encomenda por aqui</h2>
+    </header>
+
+    <div class="pub pub-destaque">
+      <div class="pub-foto"><img src="assets/img/escolas-professores.jpg" alt="Kit presente para professora em caixa kraft, com caderno verde escrito Profa. Carla, lápis de cor e etiqueta com a palavra Obrigada" width="1600" height="1200" loading="lazy" decoding="async"></div>
+      <div class="pub-txt">
+        <p class="selo">Escolas e professores</p>
+        <h3>O presente que a professora guarda</h3>
+        <p>Kits de fim de ano, lembrança de Dia dos Professores, material com o nome de cada aluno, brinde de formatura. Faço em quantidade, com a identidade da escola, e entrego embalado.</p>
+        <a class="btn btn-zap" href="https://wa.me/5511947209803?text=Oi!%20Sou%20de%20uma%20escola%20e%20queria%20um%20or%C3%A7amento%20de%20personalizados." target="_blank" rel="noopener">Pedir orçamento para escola</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-foto"><img src="assets/img/festas-eventos.jpg" alt="Caderno de mensagens aberto em mesa de festa com caneta dourada e lembrancinhas amarradas com fita" width="1600" height="1200" loading="lazy" decoding="async"></div>
+      <div class="pub-txt">
+        <p class="selo">Festas e eventos</p>
+        <h3>Da lembrancinha ao livro de assinaturas</h3>
+        <p>Aniversário, casamento, batizado, chá de bebê, primeira eucaristia. Lembrancinhas em quantidade, caderno de mensagens para os convidados e livro de fotos para guardar o dia.</p>
+        <a class="btn btn-zap" href="https://wa.me/5511947209803?text=Oi!%20Tenho%20um%20evento%20e%20quero%20lembrancinhas%20personalizadas." target="_blank" rel="noopener">Falar sobre meu evento</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-foto"><img src="assets/img/brindes-corporativos.jpg" alt="Caixa kraft aberta com caderno verde-sálvia, caneta e cartão em branco, pronta para entrega corporativa" width="1600" height="1200" loading="lazy" decoding="async"></div>
+      <div class="pub-txt">
+        <p class="selo">Empresas e igrejas</p>
+        <h3>Brinde que ninguém joga fora</h3>
+        <p>Kits para colaborador, cliente e evento, com a sua marca aplicada. Também atendo igrejas, pequenos empreendedores e quem revende.</p>
+        <a class="btn btn-zap" href="https://wa.me/5511947209803?text=Oi!%20Queria%20um%20or%C3%A7amento%20de%20brindes%20corporativos." target="_blank" rel="noopener">Pedir orçamento corporativo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ATELIÊ ================= -->
+<section class="atelie" id="atelie">
+  <div class="atelie-foto">
+    <img src="assets/img/atelie.jpg" alt="Mãos montando um caderno argolado numa bancada de ateliê, com papéis estampados em tons pastel, tesoura e guilhotina ao redor" width="1800" height="1200" loading="lazy" decoding="async">
+  </div>
+  <div class="atelie-txt">
+    <p class="olho">O ateliê</p>
+    <h2>Começou na pandemia, na mesa de casa</h2>
+    <p>A Arte Única nasceu do meu amor por trabalhos manuais e do prazer de transformar ideias em produtos únicos. Comecei trabalhando de casa e, aos poucos, fui ampliando o catálogo e desenvolvendo peças para cada momento e cada necessidade.</p>
+    <p>Hoje trabalho com papelaria criativa e personalizados, para uso pessoal, presente, festa, escola ou empresa. Cada peça é feita com atenção aos detalhes — da criação da arte à montagem e ao acabamento final.</p>
+    <p class="assin">— Arte Única Ateliê Gráfico</p>
+  </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section class="contato" id="contato">
+  <div class="container contato-in">
+    <p class="olho">Bora começar</p>
+    <h2>Me conta o que você quer criar</h2>
+    <p class="lead">Chama no WhatsApp com a sua ideia. Eu respondo com as opções, o prazo e o valor — e a arte vai pra sua aprovação antes de qualquer coisa.</p>
+    <div class="contato-btns">
+      <a class="btn btn-zap btn-g" href="https://wa.me/5511947209803?text=Oi!%20Vim%20pelo%20site%20e%20quero%20encomendar%20um%20personalizado." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.45 1.32-2 1.36-.51.04-1.16.06-1.87-.12-.43-.11-.99-.33-1.7-.64-3-1.29-4.95-4.3-5.1-4.5-.15-.2-1.22-1.62-1.22-3.09 0-1.47.77-2.19 1.04-2.49.27-.3.59-.37.79-.37h.57c.18 0 .43-.7.67.51.25.58.85 2.05.92 2.2.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.3 2.36 1.45.3.15.47.12.65-.7.17-.2.74-.87.94-1.17.2-.3.4-.25.67-.15.27.1 1.72.81 2.02.96.3.15.5.22.57.35.07.12.07.72-.18 1.41Z"/></svg>
+        (11) 94720-9803
+      </a>
+      <a class="btn btn-vazio btn-g" href="https://www.instagram.com/arte_unica_personalizados" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.26.07 1.64.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.26.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9a3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 5.68a4.16 4.16 0 1 0 0 8.32 4.16 4.16 0 0 0 0-8.32Zm0 6.86a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4Zm5.3-7.02a.97.97 0 1 1-1.94 0 .97.97 0 0 1 1.94 0Z"/></svg>
+        @arte_unica_personalizados
+      </a>
+    </div>
+    <p class="contato-nota">Atendimento por WhatsApp · Enviamos para todo o Brasil</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="container rodape-in">
+    <div>
+      <p class="rodape-marca">Arte Única Ateliê Gráfico</p>
+      <p>Papelaria criativa e personalizados feitos à mão desde 2020.</p>
+    </div>
+    <nav class="rodape-nav" aria-label="Links do rodapé">
+      <a href="#produtos">Produtos</a>
+      <a href="#como">Como funciona</a>
+      <a href="#publicos">Para quem</a>
+      <a href="#atelie">O ateliê</a>
+      <a href="https://www.instagram.com/arte_unica_personalizados" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/5511947209803" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+  <p class="credito">Site por <a href="https://sussamgt.com" target="_blank" rel="noopener">SUSSAMGT</a></p>
+</footer>
+
+<a class="zap-flutua" href="https://wa.me/5511947209803?text=Oi!%20Vim%20pelo%20site%20e%20quero%20encomendar%20um%20personalizado." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true" width="26" height="26"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.45 1.32-2 1.36-.51.04-1.16.06-1.87-.12-.43-.11-.99-.33-1.7-.64-3-1.29-4.95-4.3-5.1-4.5-.15-.2-1.22-1.62-1.22-3.09 0-1.47.77-2.19 1.04-2.49.27-.3.59-.37.79-.37h.57c.18 0 .43-.7.67.51.25.58.85 2.05.92 2.2.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.3 2.36 1.45.3.15.47.12.65-.7.17-.2.74-.87.94-1.17.2-.3.4-.25.67-.15.27.1 1.72.81 2.02.96.3.15.5.22.57.35.07.12.07.72-.18 1.41Z"/></svg>
+</a>
+
+<script>
+(function(){
+  var barra = document.getElementById('barra');
+  var aoRolar = function(){ barra.classList.toggle('rolou', window.scrollY > 12); };
+  aoRolar(); window.addEventListener('scroll', aoRolar, {passive:true});
+
+  var alvos = document.querySelectorAll('.cab, .card, .passos li, .pub, .atelie-txt, .sob-encomenda, .contato-in');
+  Array.prototype.forEach.call(alvos, function(a){ a.classList.add('revela'); });
+
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); } });
+    }, {rootMargin: '0px 0px -8% 0px', threshold: 0.05});
+    Array.prototype.forEach.call(alvos, function(a){ obs.observe(a); });
+  } else {
+    Array.prototype.forEach.call(alvos, function(a){ a.classList.add('vis'); });
+  }
+})();
+</script>
+</body>
+</html>
